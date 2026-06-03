@@ -187,7 +187,7 @@
       "label": "MainApp()",
       "file_type": "code",
       "source_file": "App.tsx",
-      "source_location": "L30",
+      "source_location": "L29",
       "id": "tui_template_native_app_mainapp",
       "community": 0,
       "norm_label": "mainapp()"
@@ -196,7 +196,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "App.tsx",
-      "source_location": "L271",
+      "source_location": "L269",
       "id": "tui_template_native_app_app",
       "community": 0,
       "norm_label": "app()"
@@ -205,7 +205,7 @@
       "label": "styles",
       "file_type": "code",
       "source_file": "App.tsx",
-      "source_location": "L290",
+      "source_location": "L288",
       "id": "tui_template_native_app_styles",
       "community": 0,
       "norm_label": "styles"
@@ -436,19 +436,10 @@
       "norm_label": "expo-sharing"
     },
     {
-      "label": "expo-splash-screen",
-      "file_type": "code",
-      "source_file": "package.json",
-      "source_location": "L25",
-      "id": "tui_template_native_package_dependencies_expo_splash_screen",
-      "community": 3,
-      "norm_label": "expo-splash-screen"
-    },
-    {
       "label": "expo-status-bar",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L25",
       "id": "tui_template_native_package_dependencies_expo_status_bar",
       "community": 3,
       "norm_label": "expo-status-bar"
@@ -457,7 +448,7 @@
       "label": "lucide-react-native",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L26",
       "id": "tui_template_native_package_dependencies_lucide_react_native",
       "community": 3,
       "norm_label": "lucide-react-native"
@@ -466,7 +457,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L27",
       "id": "tui_template_native_package_dependencies_react",
       "community": 3,
       "norm_label": "react"
@@ -475,7 +466,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L28",
       "id": "tui_template_native_package_dependencies_react_dom",
       "community": 3,
       "norm_label": "react-dom"
@@ -484,7 +475,7 @@
       "label": "react-native",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L29",
       "id": "tui_template_native_package_dependencies_react_native",
       "community": 3,
       "norm_label": "react-native"
@@ -493,7 +484,7 @@
       "label": "react-native-safe-area-context",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L30",
       "id": "tui_template_native_package_dependencies_react_native_safe_area_context",
       "community": 3,
       "norm_label": "react-native-safe-area-context"
@@ -502,7 +493,7 @@
       "label": "react-native-svg",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L31",
       "id": "tui_template_native_package_dependencies_react_native_svg",
       "community": 3,
       "norm_label": "react-native-svg"
@@ -511,7 +502,7 @@
       "label": "react-native-web",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L32",
       "id": "tui_template_native_package_dependencies_react_native_web",
       "community": 3,
       "norm_label": "react-native-web"
@@ -520,7 +511,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L34",
       "id": "tui_template_native_package_devdependencies",
       "community": 5,
       "norm_label": "devdependencies"
@@ -529,7 +520,7 @@
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L35",
       "id": "tui_template_native_package_devdependencies_eslint_js",
       "community": 5,
       "norm_label": "@eslint/js"
@@ -538,7 +529,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L36",
       "id": "tui_template_native_package_devdependencies_types_node",
       "community": 5,
       "norm_label": "@types/node"
@@ -547,7 +538,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L37",
       "id": "tui_template_native_package_devdependencies_types_react",
       "community": 5,
       "norm_label": "@types/react"
@@ -556,7 +547,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L38",
       "id": "tui_template_native_package_devdependencies_eslint",
       "community": 5,
       "norm_label": "eslint"
@@ -565,7 +556,7 @@
       "label": "eslint-plugin-react-hooks",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L39",
       "id": "tui_template_native_package_devdependencies_eslint_plugin_react_hooks",
       "community": 5,
       "norm_label": "eslint-plugin-react-hooks"
@@ -574,7 +565,7 @@
       "label": "eslint-plugin-react-refresh",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L40",
       "id": "tui_template_native_package_devdependencies_eslint_plugin_react_refresh",
       "community": 5,
       "norm_label": "eslint-plugin-react-refresh"
@@ -583,7 +574,7 @@
       "label": "globals",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L41",
       "id": "tui_template_native_package_devdependencies_globals",
       "community": 5,
       "norm_label": "globals"
@@ -592,7 +583,7 @@
       "label": "prettier",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L42",
       "id": "tui_template_native_package_devdependencies_prettier",
       "community": 5,
       "norm_label": "prettier"
@@ -601,7 +592,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L43",
       "id": "tui_template_native_package_devdependencies_typescript",
       "community": 5,
       "norm_label": "typescript"
@@ -1532,6 +1523,15 @@
       "id": "expo_readme_md",
       "community": 16,
       "norm_label": "readme.md"
+    },
+    {
+      "label": "expo-splash-screen",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "community": 3,
+      "norm_label": "expo-splash-screen",
+      "id": "tui_template_native_package_dependencies_expo_splash_screen"
     }
   ],
   "links": [
@@ -3979,5 +3979,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fd73e92cd5e1f1ef72ab254ddc66dcebdbe4e1ae"
+  "built_at_commit": "d0d029515e9ddd93e361a2a127dfce5a99383383"
 }

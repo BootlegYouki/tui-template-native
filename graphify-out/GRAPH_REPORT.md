@@ -1,7 +1,7 @@
-# Graph Report - tui-template-native  (2026-06-03)
+# Graph Report - tui-template-native  (2026-06-04)
 
 ## Corpus Check
-- 27 files · ~36,571 words
+- 27 files · ~36,544 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `fd73e92c`
+- Built from commit: `d0d02951`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

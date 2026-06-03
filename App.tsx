@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { StyleSheet, View, ScrollView, Platform, Animated } from 'react-native';
 import { useSafeAreaInsets, SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
-import * as SplashScreen from 'expo-splash-screen';
+
 import {
   useFonts,
   JetBrainsMono_400Regular,
@@ -24,8 +24,7 @@ import { SplashIcon } from './src/components/splash-icon';
 import { TuiHeader } from './src/components/tui-header';
 import { Terminal } from 'lucide-react-native';
 
-// Keep the native splash screen visible while fonts load
-SplashScreen.preventAutoHideAsync().catch(() => { });
+
 
 function MainApp() {
   const { colors, isDark, setThemeMode } = useTheme();
@@ -58,10 +57,9 @@ function MainApp() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Hide native splash screen once resources are loaded
+  // Set app ready once data is loaded
   useEffect(() => {
     if (dataLoaded) {
-      SplashScreen.hideAsync().catch(() => { });
       setIsAppReady(true);
     }
   }, [dataLoaded]);

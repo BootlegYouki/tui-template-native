@@ -1,12 +1,12 @@
 {
   "E:\\Github\\tui-template-native\\app.json": {
-    "mtime": 1780448734.3135934,
-    "ast_hash": "1572033adf15a3ff9abb8fb0db53b988",
+    "mtime": 1780528181.6108718,
+    "ast_hash": "fa9326d0500399e58544589c77a4dd17",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\App.tsx": {
-    "mtime": 1780450144.0564744,
-    "ast_hash": "de2822447787dce7fcdc06329b1d866c",
+    "mtime": 1780528244.172796,
+    "ast_hash": "989b662bae2f2f1327020a31aae7217b",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\eslint.config.js": {
@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\package.json": {
-    "mtime": 1780448929.3076062,
-    "ast_hash": "e083202911e2000b4aa28bd40ad18ea8",
+    "mtime": 1780528251.02052,
+    "ast_hash": "8a0f867f825de0facf667e337ac1f0b1",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\tsconfig.json": {
@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\.github\\workflows\\build-ios-ipa.yml": {
-    "mtime": 1780448769.5198271,
-    "ast_hash": "8070e95fa05a592262b7e64a7e7ad2b1",
+    "mtime": 1780528181.609313,
+    "ast_hash": "8f0ecd2d12c99c4f8769f7086809dafa",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\assets\\darkmode.svg": {
