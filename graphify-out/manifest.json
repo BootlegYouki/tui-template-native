@@ -1,7 +1,7 @@
 {
   "E:\\Github\\tui-template-native\\app.json": {
-    "mtime": 1780528181.6108718,
-    "ast_hash": "fa9326d0500399e58544589c77a4dd17",
+    "mtime": 1780538972.5864184,
+    "ast_hash": "86e27687b39497db4bbc7d473d8a2560",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\App.tsx": {
@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\package.json": {
-    "mtime": 1780528251.02052,
-    "ast_hash": "8a0f867f825de0facf667e337ac1f0b1",
+    "mtime": 1780538964.423937,
+    "ast_hash": "6cb5de10e4d7f3fa0276df44fd09f2b4",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\tsconfig.json": {
@@ -150,13 +150,43 @@
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\src\\components\\splash-icon.tsx": {
-    "mtime": 1780449967.315622,
-    "ast_hash": "7ab9e9087cd224fc29b5927844f84e99",
+    "mtime": 1780530060.2647188,
+    "ast_hash": "22c3dbacac97c3a23e3b888923e02ddb",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\src\\components\\tui-header.tsx": {
     "mtime": 1780450065.8134549,
     "ast_hash": "5353ccf32ee28bfc75035f1951998efa",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\scripts\\convert-png-to-svg.py": {
+    "mtime": 1780530005.2041457,
+    "ast_hash": "2370f61e1519dabc5dcc453e364a9ccf",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\src\\components\\banner-svg.tsx": {
+    "mtime": 1780529550.026408,
+    "ast_hash": "6ee1c4c6dd663c8d7c9159c9ae8bcd4e",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\src\\components\\icon-svg.tsx": {
+    "mtime": 1780530012.716833,
+    "ast_hash": "f24a77bb4f3f3ff1a858dd56706d47ae",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\.github\\workflows\\build-dev-client.yml": {
+    "mtime": 1780538985.6554344,
+    "ast_hash": "cbd764ab5598c48695796be16c78f01b",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\assets\\banner.svg": {
+    "mtime": 1780529550.024407,
+    "ast_hash": "43dba8b80e31ea1e6d88e4e64c5d6c3d",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\assets\\icon.svg": {
+    "mtime": 1780530012.716833,
+    "ast_hash": "c2caf3ebc2e90663be26a8d5fa54a4d5",
     "semantic_hash": ""
   }
 }
