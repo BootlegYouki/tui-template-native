@@ -6,6 +6,11 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#18181B"
+    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.bootlegyouki.tuitemplatenative"
@@ -21,7 +26,32 @@
       "favicon": "./assets/icon.png"
     },
     "plugins": [
-      "expo-font"
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow the app to access the camera."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow the app to access your photo library.",
+          "savePhotosPermission": "Allow the app to save images to your library."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow the app to access your photo library."
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow the app to authenticate using FaceID."
+        }
+      ]
     ]
   }
 }
