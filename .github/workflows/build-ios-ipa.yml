@@ -14,16 +14,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
+      - name: Set up Xcode version
+        uses: maxim-lobanov/setup-xcode@v1
         with:
-          version: 9
+          xcode-version: '16.2'
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: 'npm'
 
       - name: Auto-increment version in app.json
         id: bump_version
@@ -48,18 +48,24 @@ jobs:
           "
 
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          set -o pipefail
+          npm install 2>&1 | tee npm_install.log
 
       - name: Expo Prebuild (Generate iOS folder)
-        run: npx expo prebuild --platform ios --clean
+        run: |
+          set -o pipefail
+          npx expo prebuild --platform ios --clean 2>&1 | tee prebuild.log
 
       - name: Install CocoaPods
         run: |
+          set -o pipefail
           cd ios
-          pod install
-          
+          pod install 2>&1 | tee ../pod_install.log
+
       - name: Build Unsigned App
         run: |
+          set -o pipefail
           cd ios
           xcodebuild -workspace TuiTemplateNative.xcworkspace \
             -scheme TuiTemplateNative \
@@ -68,13 +74,13 @@ jobs:
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGN_IDENTITY=""
+            CODE_SIGN_IDENTITY="" 2>&1 | tee ../xcodebuild.log
 
       - name: Package into IPA
         run: |
           cd ios/build/Build/Products/Release-iphoneos
           mkdir Payload
-          mv TuiTemplateNative.app Payload/
+          mv *.app Payload/
           zip -qr ../../../../../TuiTemplateNative.ipa Payload
 
       - name: Generate SideStore source.json
@@ -136,3 +142,54 @@ jobs:
           git add app.json sidestore.json
           git diff --staged --quiet || git commit -m "chore: release v${VERSION} and update SideStore source [skip ci]"
           git push origin main
+
+      - name: Report Build Errors
+        if: failure()
+        run: |
+          echo "### ❌ Build Failed" >> $GITHUB_STEP_SUMMARY
+          echo "Here is a summary of the errors encountered during the build process:" >> $GITHUB_STEP_SUMMARY
+          
+          # Check npm install log
+          if [ -f npm_install.log ]; then
+            if grep -qi "err" npm_install.log; then
+              echo "#### 📦 npm install errors:" >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+              grep -i -C 2 "err" npm_install.log | tail -n 25 >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+            fi
+          fi
+          
+          # Check expo prebuild log
+          if [ -f prebuild.log ]; then
+            if grep -qi "error\|failed" prebuild.log; then
+              echo "#### ⚙️ Expo Prebuild errors:" >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+              grep -i -C 2 "error\|failed" prebuild.log | tail -n 25 >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+            fi
+          fi
+          
+          # Check cocoa pods install log
+          if [ -f pod_install.log ]; then
+            if grep -qi "error\|failed" pod_install.log; then
+              echo "#### 🍏 CocoaPods installation errors:" >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+              grep -i -C 2 "error\|failed" pod_install.log | tail -n 25 >> $GITHUB_STEP_SUMMARY
+              echo '```' >> $GITHUB_STEP_SUMMARY
+            fi
+          fi
+
+          # Check xcodebuild log
+          if [ -f xcodebuild.log ]; then
+            echo "#### 🛠️ Xcode compilation errors:" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            # Xcode errors usually contain "error:" or "failed" or "note: build failed" or clang/swiftc errors
+            grep -i -E "error:|failed|clang: error|swiftc: error" xcodebuild.log | tail -n 30 >> $GITHUB_STEP_SUMMARY
+            
+            # If nothing was written to summary from grep, fall back to last 30 lines of xcodebuild
+            if [ $(wc -l < $GITHUB_STEP_SUMMARY) -lt 6 ]; then
+              echo "Last 30 lines of compilation output:" >> $GITHUB_STEP_SUMMARY
+              tail -n 30 xcodebuild.log >> $GITHUB_STEP_SUMMARY
+            fi
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi
