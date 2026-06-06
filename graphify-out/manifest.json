@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\package.json": {
-    "mtime": 1780538964.423937,
-    "ast_hash": "6cb5de10e4d7f3fa0276df44fd09f2b4",
+    "mtime": 1780756045.868817,
+    "ast_hash": "daa3723ca14dc6cb4518a36e1e954b90",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\tsconfig.json": {
@@ -109,19 +109,9 @@
     "ast_hash": "8f0ecd2d12c99c4f8769f7086809dafa",
     "semantic_hash": ""
   },
-  "E:\\Github\\tui-template-native\\assets\\darkmode.svg": {
-    "mtime": 1780377015.5445201,
-    "ast_hash": "d69e440f2fdf0c5c77302ad97836266c",
-    "semantic_hash": ""
-  },
   "E:\\Github\\tui-template-native\\assets\\icon.png": {
-    "mtime": 1780448726.4712076,
-    "ast_hash": "fb994e4003011fffaccb9de53425828c",
-    "semantic_hash": ""
-  },
-  "E:\\Github\\tui-template-native\\assets\\lightmode.svg": {
-    "mtime": 1780377015.54089,
-    "ast_hash": "d69e440f2fdf0c5c77302ad97836266c",
+    "mtime": 1780756556.4079673,
+    "ast_hash": "66f43f40fa01d17e485c472a54c97f2e",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\.expo\\devices.json": {
@@ -135,8 +125,8 @@
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\README.md": {
-    "mtime": 1780450090.8731244,
-    "ast_hash": "c73ba00f5e40acf125cf5710f6361618",
+    "mtime": 1780756715.679437,
+    "ast_hash": "f1b08ad7ef014a391c478be1a4a761a4",
     "semantic_hash": ""
   },
   "E:\\Github\\tui-template-native\\.expo\\README.md": {
@@ -159,34 +149,39 @@
     "ast_hash": "5353ccf32ee28bfc75035f1951998efa",
     "semantic_hash": ""
   },
-  "E:\\Github\\tui-template-native\\scripts\\convert-png-to-svg.py": {
-    "mtime": 1780530005.2041457,
-    "ast_hash": "2370f61e1519dabc5dcc453e364a9ccf",
-    "semantic_hash": ""
-  },
-  "E:\\Github\\tui-template-native\\src\\components\\banner-svg.tsx": {
-    "mtime": 1780529550.026408,
-    "ast_hash": "6ee1c4c6dd663c8d7c9159c9ae8bcd4e",
-    "semantic_hash": ""
-  },
-  "E:\\Github\\tui-template-native\\src\\components\\icon-svg.tsx": {
-    "mtime": 1780530012.716833,
-    "ast_hash": "f24a77bb4f3f3ff1a858dd56706d47ae",
-    "semantic_hash": ""
-  },
   "E:\\Github\\tui-template-native\\.github\\workflows\\build-dev-client.yml": {
     "mtime": 1780538985.6554344,
     "ast_hash": "cbd764ab5598c48695796be16c78f01b",
     "semantic_hash": ""
   },
-  "E:\\Github\\tui-template-native\\assets\\banner.svg": {
-    "mtime": 1780529550.024407,
-    "ast_hash": "43dba8b80e31ea1e6d88e4e64c5d6c3d",
+  "E:\\Github\\tui-template-native\\scripts\\fix_assets.py": {
+    "mtime": 1780756712.7832813,
+    "ast_hash": "8aafae08702015ab74182c60c5a7aa68",
     "semantic_hash": ""
   },
-  "E:\\Github\\tui-template-native\\assets\\icon.svg": {
-    "mtime": 1780530012.716833,
-    "ast_hash": "c2caf3ebc2e90663be26a8d5fa54a4d5",
+  "E:\\Github\\tui-template-native\\assets\\adaptive-icon-monochrome.png": {
+    "mtime": 1780756719.7675455,
+    "ast_hash": "982bf3474d0e379948acef03104c7dde",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\assets\\adaptive-icon.png": {
+    "mtime": 1780756719.76653,
+    "ast_hash": "982bf3474d0e379948acef03104c7dde",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\assets\\splash-icon-monochrome.png": {
+    "mtime": 1780756719.7620745,
+    "ast_hash": "756385782d39ffadd1886089155b80ec",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\assets\\splash-icon.png": {
+    "mtime": 1780756719.759005,
+    "ast_hash": "756385782d39ffadd1886089155b80ec",
+    "semantic_hash": ""
+  },
+  "E:\\Github\\tui-template-native\\assets\\favicon.png": {
+    "mtime": 1780756719.7705824,
+    "ast_hash": "d95c91d525035b852d4ef48721a732a2",
     "semantic_hash": ""
   }
 }

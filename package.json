@@ -13,7 +13,8 @@
     "lint": "eslint .",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
-    "rename": "node scripts/rename-project.js"
+    "rename": "node scripts/rename-project.js",
+    "fix-assets": "python scripts/fix_assets.py"
   },
   "dependencies": {
     "@expo-google-fonts/jetbrains-mono": "^0.4.1",

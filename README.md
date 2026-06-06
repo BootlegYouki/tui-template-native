@@ -39,6 +39,7 @@ pnpm android
 ## 🛠 Available Scripts
 
 *   `pnpm rename <Name>`: Rename project files, bundle identifiers, and workflows.
+*   `pnpm fix-assets`: Runs Python script to cleanly crop, transparentize, and regenerate logo assets.
 *   `pnpm typecheck`: Run the TypeScript compiler checker (`tsc --noEmit`).
 *   `pnpm lint`: Run ESLint rules.
 *   `pnpm format`: Format codebase files using Prettier.
@@ -85,3 +86,25 @@ The template contains an automated unsigned IPA release chain in [.github/workfl
 3.  **Unsigned Compilation**: Compiles the project using `xcodebuild` with signature requirements disabled.
 4.  **Release Packaging**: Packages the `.app` payload into a `.ipa` file.
 5.  **SideStore Update**: Generates a standard `sidestore.json` source feed and releases it on GitHub Releases for auto-updating sideload installations.
+
+---
+
+## 🎨 App Icon & Splash Screen Assets Regeneration
+
+If you have a native app icon pack (e.g. from AppIcon.co) containing platform assets, you can drop the entire extracted folder as `assets/iconpack/` and run:
+```bash
+pnpm fix-assets
+```
+
+This Python script:
+1. **Auto-Extracts from Icon Pack:** Automatically scans the nested `assets/iconpack/` folder recursively to locate the highest resolution base icon (like `AppIcon~ios-marketing.png` or `play_store_512.png`), copies it to `assets/icon.png`, and automatically cleans up the `iconpack` folder.
+2. **Transparentizes Background:** Locates the bounding box of the non-black content in `assets/icon.png`, crops it, and converts the black background to clean transparency with antialiasing.
+3. **Regenerates Clean Assets:** Automatically rescales, centers, and overwrites all launcher and splash screen files inside `assets/`:
+   - `splash-icon.png` (75% canvas ratio, matching BootHub)
+   - `splash-icon-monochrome.png`
+   - `adaptive-icon.png` (re-centered & scaled to adaptive launcher specs)
+   - `adaptive-icon-monochrome.png`
+   - `favicon.png` (re-centered & scaled to web favicon specs)
+
+> [!NOTE]
+> Make sure `Pillow` is installed in your python environment (`pip install Pillow`) before running the script.

@@ -409,10 +409,19 @@
       "norm_label": "rename"
     },
     {
+      "label": "fix-assets",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "tui_template_native_package_scripts_fix_assets",
+      "community": 4,
+      "norm_label": "fix-assets"
+    },
+    {
       "label": "dependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L19",
       "id": "tui_template_native_package_dependencies",
       "community": 3,
       "norm_label": "dependencies"
@@ -421,7 +430,7 @@
       "label": "@expo-google-fonts/jetbrains-mono",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "tui_template_native_package_dependencies_expo_google_fonts_jetbrains_mono",
       "community": 3,
       "norm_label": "@expo-google-fonts/jetbrains-mono"
@@ -430,7 +439,7 @@
       "label": "@react-native-async-storage/async-storage",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L20",
+      "source_location": "L21",
       "id": "tui_template_native_package_dependencies_react_native_async_storage_async_storage",
       "community": 3,
       "norm_label": "@react-native-async-storage/async-storage"
@@ -439,7 +448,7 @@
       "label": "expo",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L22",
       "id": "tui_template_native_package_dependencies_expo",
       "community": 3,
       "norm_label": "expo"
@@ -448,7 +457,7 @@
       "label": "expo-av",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "id": "tui_template_native_package_dependencies_expo_av",
       "community": 3,
       "norm_label": "expo-av"
@@ -457,7 +466,7 @@
       "label": "expo-camera",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "id": "tui_template_native_package_dependencies_expo_camera",
       "community": 3,
       "norm_label": "expo-camera"
@@ -466,7 +475,7 @@
       "label": "expo-clipboard",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "id": "tui_template_native_package_dependencies_expo_clipboard",
       "community": 3,
       "norm_label": "expo-clipboard"
@@ -475,7 +484,7 @@
       "label": "expo-dev-client",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "id": "tui_template_native_package_dependencies_expo_dev_client",
       "community": 3,
       "norm_label": "expo-dev-client"
@@ -484,7 +493,7 @@
       "label": "expo-device",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "tui_template_native_package_dependencies_expo_device",
       "community": 3,
       "norm_label": "expo-device"
@@ -493,7 +502,7 @@
       "label": "expo-document-picker",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "tui_template_native_package_dependencies_expo_document_picker",
       "community": 3,
       "norm_label": "expo-document-picker"
@@ -502,7 +511,7 @@
       "label": "expo-file-system",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "id": "tui_template_native_package_dependencies_expo_file_system",
       "community": 3,
       "norm_label": "expo-file-system"
@@ -511,7 +520,7 @@
       "label": "expo-font",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "tui_template_native_package_dependencies_expo_font",
       "community": 3,
       "norm_label": "expo-font"
@@ -520,7 +529,7 @@
       "label": "expo-haptics",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "id": "tui_template_native_package_dependencies_expo_haptics",
       "community": 3,
       "norm_label": "expo-haptics"
@@ -529,7 +538,7 @@
       "label": "expo-image-picker",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "id": "tui_template_native_package_dependencies_expo_image_picker",
       "community": 3,
       "norm_label": "expo-image-picker"
@@ -538,7 +547,7 @@
       "label": "expo-linear-gradient",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "id": "tui_template_native_package_dependencies_expo_linear_gradient",
       "community": 3,
       "norm_label": "expo-linear-gradient"
@@ -547,7 +556,7 @@
       "label": "expo-local-authentication",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L33",
+      "source_location": "L34",
       "id": "tui_template_native_package_dependencies_expo_local_authentication",
       "community": 3,
       "norm_label": "expo-local-authentication"
@@ -556,7 +565,7 @@
       "label": "expo-media-library",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L34",
+      "source_location": "L35",
       "id": "tui_template_native_package_dependencies_expo_media_library",
       "community": 3,
       "norm_label": "expo-media-library"
@@ -565,7 +574,7 @@
       "label": "expo-sharing",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L35",
+      "source_location": "L36",
       "id": "tui_template_native_package_dependencies_expo_sharing",
       "community": 3,
       "norm_label": "expo-sharing"
@@ -574,7 +583,7 @@
       "label": "expo-sqlite",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L36",
+      "source_location": "L37",
       "id": "tui_template_native_package_dependencies_expo_sqlite",
       "community": 3,
       "norm_label": "expo-sqlite"
@@ -583,7 +592,7 @@
       "label": "expo-status-bar",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L37",
+      "source_location": "L38",
       "id": "tui_template_native_package_dependencies_expo_status_bar",
       "community": 3,
       "norm_label": "expo-status-bar"
@@ -592,7 +601,7 @@
       "label": "expo-web-browser",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L38",
+      "source_location": "L39",
       "id": "tui_template_native_package_dependencies_expo_web_browser",
       "community": 3,
       "norm_label": "expo-web-browser"
@@ -601,7 +610,7 @@
       "label": "lucide-react-native",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L39",
+      "source_location": "L40",
       "id": "tui_template_native_package_dependencies_lucide_react_native",
       "community": 3,
       "norm_label": "lucide-react-native"
@@ -610,7 +619,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L40",
+      "source_location": "L41",
       "id": "tui_template_native_package_dependencies_react",
       "community": 3,
       "norm_label": "react"
@@ -619,7 +628,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L41",
+      "source_location": "L42",
       "id": "tui_template_native_package_dependencies_react_dom",
       "community": 3,
       "norm_label": "react-dom"
@@ -628,7 +637,7 @@
       "label": "react-native",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L42",
+      "source_location": "L43",
       "id": "tui_template_native_package_dependencies_react_native",
       "community": 3,
       "norm_label": "react-native"
@@ -637,7 +646,7 @@
       "label": "react-native-reanimated",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L43",
+      "source_location": "L44",
       "id": "tui_template_native_package_dependencies_react_native_reanimated",
       "community": 3,
       "norm_label": "react-native-reanimated"
@@ -646,7 +655,7 @@
       "label": "react-native-safe-area-context",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L44",
+      "source_location": "L45",
       "id": "tui_template_native_package_dependencies_react_native_safe_area_context",
       "community": 3,
       "norm_label": "react-native-safe-area-context"
@@ -655,7 +664,7 @@
       "label": "react-native-svg",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L45",
+      "source_location": "L46",
       "id": "tui_template_native_package_dependencies_react_native_svg",
       "community": 3,
       "norm_label": "react-native-svg"
@@ -664,7 +673,7 @@
       "label": "react-native-web",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L46",
+      "source_location": "L47",
       "id": "tui_template_native_package_dependencies_react_native_web",
       "community": 3,
       "norm_label": "react-native-web"
@@ -673,7 +682,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L48",
+      "source_location": "L49",
       "id": "tui_template_native_package_devdependencies",
       "community": 5,
       "norm_label": "devdependencies"
@@ -682,7 +691,7 @@
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L49",
+      "source_location": "L50",
       "id": "tui_template_native_package_devdependencies_eslint_js",
       "community": 5,
       "norm_label": "@eslint/js"
@@ -691,7 +700,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L50",
+      "source_location": "L51",
       "id": "tui_template_native_package_devdependencies_types_node",
       "community": 5,
       "norm_label": "@types/node"
@@ -700,7 +709,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L51",
+      "source_location": "L52",
       "id": "tui_template_native_package_devdependencies_types_react",
       "community": 5,
       "norm_label": "@types/react"
@@ -709,7 +718,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L52",
+      "source_location": "L53",
       "id": "tui_template_native_package_devdependencies_eslint",
       "community": 5,
       "norm_label": "eslint"
@@ -718,7 +727,7 @@
       "label": "eslint-plugin-react-hooks",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L53",
+      "source_location": "L54",
       "id": "tui_template_native_package_devdependencies_eslint_plugin_react_hooks",
       "community": 5,
       "norm_label": "eslint-plugin-react-hooks"
@@ -727,7 +736,7 @@
       "label": "eslint-plugin-react-refresh",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L54",
+      "source_location": "L55",
       "id": "tui_template_native_package_devdependencies_eslint_plugin_react_refresh",
       "community": 5,
       "norm_label": "eslint-plugin-react-refresh"
@@ -736,7 +745,7 @@
       "label": "globals",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L55",
+      "source_location": "L56",
       "id": "tui_template_native_package_devdependencies_globals",
       "community": 5,
       "norm_label": "globals"
@@ -745,7 +754,7 @@
       "label": "prettier",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L56",
+      "source_location": "L57",
       "id": "tui_template_native_package_devdependencies_prettier",
       "community": 5,
       "norm_label": "prettier"
@@ -754,7 +763,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L57",
+      "source_location": "L58",
       "id": "tui_template_native_package_devdependencies_typescript",
       "community": 5,
       "norm_label": "typescript"
@@ -763,7 +772,7 @@
       "label": "typescript-eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L58",
+      "source_location": "L59",
       "id": "tui_template_native_package_devdependencies_typescript_eslint",
       "community": 5,
       "norm_label": "typescript-eslint"
@@ -832,22 +841,13 @@
       "norm_label": "devices"
     },
     {
-      "label": "convert-png-to-svg.py",
+      "label": "fix_assets.py",
       "file_type": "code",
-      "source_file": "scripts/convert-png-to-svg.py",
+      "source_file": "scripts/fix_assets.py",
       "source_location": "L1",
-      "id": "scripts_convert_png_to_svg_py",
-      "community": 25,
-      "norm_label": "convert-png-to-svg.py"
-    },
-    {
-      "label": "vectorize_png()",
-      "file_type": "code",
-      "source_file": "scripts/convert-png-to-svg.py",
-      "source_location": "L5",
-      "id": "scripts_convert_png_to_svg_vectorize_png",
-      "community": 25,
-      "norm_label": "vectorize_png()"
+      "id": "scripts_fix_assets_py",
+      "community": 17,
+      "norm_label": "fix_assets.py"
     },
     {
       "label": "rename-project.js",
@@ -940,42 +940,6 @@
       "norm_label": "workflowpath"
     },
     {
-      "label": "banner-svg.tsx",
-      "file_type": "code",
-      "source_file": "src/components/banner-svg.tsx",
-      "source_location": "L1",
-      "id": "src_components_banner_svg_tsx",
-      "community": 24,
-      "norm_label": "banner-svg.tsx"
-    },
-    {
-      "label": "BannerSvg()",
-      "file_type": "code",
-      "source_file": "src/components/banner-svg.tsx",
-      "source_location": "L4",
-      "id": "components_banner_svg_bannersvg",
-      "community": 24,
-      "norm_label": "bannersvg()"
-    },
-    {
-      "label": "icon-svg.tsx",
-      "file_type": "code",
-      "source_file": "src/components/icon-svg.tsx",
-      "source_location": "L1",
-      "id": "src_components_icon_svg_tsx",
-      "community": 18,
-      "norm_label": "icon-svg.tsx"
-    },
-    {
-      "label": "IconSvg()",
-      "file_type": "code",
-      "source_file": "src/components/icon-svg.tsx",
-      "source_location": "L4",
-      "id": "components_icon_svg_iconsvg",
-      "community": 18,
-      "norm_label": "iconsvg()"
-    },
-    {
       "label": "splash-icon.tsx",
       "file_type": "code",
       "source_file": "src/components/splash-icon.tsx",
@@ -1044,7 +1008,7 @@
       "source_file": "src/components/tui-calendar.tsx",
       "source_location": "L1",
       "id": "src_components_tui_calendar_tsx",
-      "community": 17,
+      "community": 8,
       "norm_label": "tui-calendar.tsx"
     },
     {
@@ -1053,7 +1017,7 @@
       "source_file": "src/components/tui-calendar.tsx",
       "source_location": "L7",
       "id": "components_tui_calendar_tuicalendarprops",
-      "community": 17,
+      "community": 8,
       "norm_label": "tuicalendarprops"
     },
     {
@@ -1062,7 +1026,7 @@
       "source_file": "src/components/tui-calendar.tsx",
       "source_location": "L13",
       "id": "components_tui_calendar_months",
-      "community": 17,
+      "community": 8,
       "norm_label": "months"
     },
     {
@@ -1071,7 +1035,7 @@
       "source_file": "src/components/tui-calendar.tsx",
       "source_location": "L19",
       "id": "components_tui_calendar_weekdays",
-      "community": 17,
+      "community": 8,
       "norm_label": "weekdays"
     },
     {
@@ -1080,7 +1044,7 @@
       "source_file": "src/components/tui-calendar.tsx",
       "source_location": "L21",
       "id": "components_tui_calendar_tuicalendar",
-      "community": 17,
+      "community": 8,
       "norm_label": "tuicalendar()"
     },
     {
@@ -1089,7 +1053,7 @@
       "source_file": "src/components/tui-calendar.tsx",
       "source_location": "L239",
       "id": "components_tui_calendar_styles",
-      "community": 17,
+      "community": 8,
       "norm_label": "styles"
     },
     {
@@ -1224,7 +1188,7 @@
       "source_file": "src/components/tui-container.tsx",
       "source_location": "L1",
       "id": "src_components_tui_container_tsx",
-      "community": 7,
+      "community": 8,
       "norm_label": "tui-container.tsx"
     },
     {
@@ -1233,7 +1197,7 @@
       "source_file": "src/components/tui-container.tsx",
       "source_location": "L6",
       "id": "components_tui_container_tuicontainerprops",
-      "community": 7,
+      "community": 8,
       "norm_label": "tuicontainerprops"
     },
     {
@@ -1242,7 +1206,7 @@
       "source_file": "src/components/tui-container.tsx",
       "source_location": "L17",
       "id": "components_tui_container_tuicontainer",
-      "community": 7,
+      "community": 8,
       "norm_label": "tuicontainer()"
     },
     {
@@ -1251,7 +1215,7 @@
       "source_file": "src/components/tui-container.tsx",
       "source_location": "L99",
       "id": "components_tui_container_styles",
-      "community": 7,
+      "community": 8,
       "norm_label": "styles"
     },
     {
@@ -1260,7 +1224,7 @@
       "source_file": "src/components/tui-drawer.tsx",
       "source_location": "L1",
       "id": "src_components_tui_drawer_tsx",
-      "community": 8,
+      "community": 7,
       "norm_label": "tui-drawer.tsx"
     },
     {
@@ -1269,7 +1233,7 @@
       "source_file": "src/components/tui-drawer.tsx",
       "source_location": "L8",
       "id": "components_tui_drawer_spring_config_open",
-      "community": 8,
+      "community": 7,
       "norm_label": "spring_config_open"
     },
     {
@@ -1278,7 +1242,7 @@
       "source_file": "src/components/tui-drawer.tsx",
       "source_location": "L15",
       "id": "components_tui_drawer_tuidrawerprops",
-      "community": 8,
+      "community": 7,
       "norm_label": "tuidrawerprops"
     },
     {
@@ -1287,7 +1251,7 @@
       "source_file": "src/components/tui-drawer.tsx",
       "source_location": "L23",
       "id": "components_tui_drawer_tuidrawer",
-      "community": 8,
+      "community": 7,
       "norm_label": "tuidrawer()"
     },
     {
@@ -1296,7 +1260,7 @@
       "source_file": "src/components/tui-drawer.tsx",
       "source_location": "L152",
       "id": "components_tui_drawer_styles",
-      "community": 8,
+      "community": 7,
       "norm_label": "styles"
     },
     {
@@ -1422,7 +1386,7 @@
       "source_file": "src/components/tui-skeleton.tsx",
       "source_location": "L1",
       "id": "src_components_tui_skeleton_tsx",
-      "community": 7,
+      "community": 8,
       "norm_label": "tui-skeleton.tsx"
     },
     {
@@ -1431,7 +1395,7 @@
       "source_file": "src/components/tui-skeleton.tsx",
       "source_location": "L9",
       "id": "components_tui_skeleton_tuiskeletonloader",
-      "community": 0,
+      "community": 8,
       "norm_label": "tuiskeletonloader()"
     },
     {
@@ -1440,7 +1404,7 @@
       "source_file": "src/components/tui-skeleton.tsx",
       "source_location": "L284",
       "id": "components_tui_skeleton_styles",
-      "community": 7,
+      "community": 8,
       "norm_label": "styles"
     },
     {
@@ -1485,7 +1449,7 @@
       "source_file": "src/components/tui-text.tsx",
       "source_location": "L1",
       "id": "src_components_tui_text_tsx",
-      "community": 7,
+      "community": 20,
       "norm_label": "tui-text.tsx"
     },
     {
@@ -1494,7 +1458,7 @@
       "source_file": "src/components/tui-text.tsx",
       "source_location": "L5",
       "id": "components_tui_text_tuitextprops",
-      "community": 7,
+      "community": 20,
       "norm_label": "tuitextprops"
     },
     {
@@ -1503,7 +1467,7 @@
       "source_file": "src/components/tui-text.tsx",
       "source_location": "L11",
       "id": "components_tui_text_tuitext",
-      "community": 7,
+      "community": 20,
       "norm_label": "tuitext()"
     },
     {
@@ -1663,7 +1627,7 @@
       "label": "\ud83c\udfa8 Brutalist Design System (TUI)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L49",
+      "source_location": "L50",
       "id": "tui_template_native_readme_brutalist_design_system_tui",
       "community": 6,
       "norm_label": "\ud83c\udfa8 brutalist design system (tui)"
@@ -1672,7 +1636,7 @@
       "label": "Core Components (`src/components/`)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L53",
+      "source_location": "L54",
       "id": "tui_template_native_readme_core_components_src_components",
       "community": 6,
       "norm_label": "core components (`src/components/`)"
@@ -1681,7 +1645,7 @@
       "label": "\ud83c\udf05 Internal Animated Splash Screen",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L66",
+      "source_location": "L67",
       "id": "tui_template_native_readme_internal_animated_splash_screen",
       "community": 6,
       "norm_label": "\ud83c\udf05 internal animated splash screen"
@@ -1690,7 +1654,7 @@
       "label": "Theme & Colors (`src/theme/`)",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L71",
+      "source_location": "L72",
       "id": "tui_template_native_readme_theme_colors_src_theme",
       "community": 6,
       "norm_label": "theme & colors (`src/theme/`)"
@@ -1699,10 +1663,19 @@
       "label": "\ud83d\udce6 Automated iOS Release Pipeline",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L79",
+      "source_location": "L80",
       "id": "tui_template_native_readme_automated_ios_release_pipeline",
       "community": 6,
       "norm_label": "\ud83d\udce6 automated ios release pipeline"
+    },
+    {
+      "label": "\ud83c\udfa8 App Icon & Splash Screen Assets Regeneration",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L92",
+      "id": "tui_template_native_readme_app_icon_splash_screen_assets_regeneration",
+      "community": 6,
+      "norm_label": "\ud83c\udfa8 app icon & splash screen assets regeneration"
     },
     {
       "label": "graphify.md",
@@ -1846,9 +1819,9 @@
       "source_file": "app.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_app_expo",
-      "target": "tui_template_native_app_expo_splash",
-      "confidence_score": 1.0
+      "target": "tui_template_native_app_expo_splash"
     },
     {
       "relation": "contains",
@@ -1886,9 +1859,9 @@
       "source_file": "app.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_app_expo_splash",
-      "target": "tui_template_native_app_splash_backgroundcolor",
-      "confidence_score": 1.0
+      "target": "tui_template_native_app_splash_backgroundcolor"
     },
     {
       "relation": "contains",
@@ -1896,9 +1869,9 @@
       "source_file": "app.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_app_expo_splash",
-      "target": "tui_template_native_app_splash_image",
-      "confidence_score": 1.0
+      "target": "tui_template_native_app_splash_image"
     },
     {
       "relation": "contains",
@@ -1906,9 +1879,9 @@
       "source_file": "app.json",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_app_expo_splash",
-      "target": "tui_template_native_app_splash_resizemode",
-      "confidence_score": 1.0
+      "target": "tui_template_native_app_splash_resizemode"
     },
     {
       "relation": "contains",
@@ -2436,8 +2409,18 @@
       "source_file": "package.json",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_scripts",
-      "target": "tui_template_native_package_scripts_dev",
+      "target": "tui_template_native_package_scripts_dev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "tui_template_native_package_scripts",
+      "target": "tui_template_native_package_scripts_fix_assets",
       "confidence_score": 1.0
     },
     {
@@ -2526,9 +2509,9 @@
       "source_file": "package.json",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_av",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_av"
     },
     {
       "relation": "contains",
@@ -2536,9 +2519,9 @@
       "source_file": "package.json",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_camera",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_camera"
     },
     {
       "relation": "contains",
@@ -2546,9 +2529,9 @@
       "source_file": "package.json",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_clipboard",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_clipboard"
     },
     {
       "relation": "contains",
@@ -2556,9 +2539,9 @@
       "source_file": "package.json",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_dev_client",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_dev_client"
     },
     {
       "relation": "contains",
@@ -2566,9 +2549,9 @@
       "source_file": "package.json",
       "source_location": "L26",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_device",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_device"
     },
     {
       "relation": "contains",
@@ -2616,9 +2599,9 @@
       "source_file": "package.json",
       "source_location": "L30",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_haptics",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_haptics"
     },
     {
       "relation": "contains",
@@ -2626,9 +2609,9 @@
       "source_file": "package.json",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_image_picker",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_image_picker"
     },
     {
       "relation": "contains",
@@ -2636,9 +2619,9 @@
       "source_file": "package.json",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_linear_gradient",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_linear_gradient"
     },
     {
       "relation": "contains",
@@ -2646,9 +2629,9 @@
       "source_file": "package.json",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_local_authentication",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_local_authentication"
     },
     {
       "relation": "contains",
@@ -2656,9 +2639,9 @@
       "source_file": "package.json",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_media_library",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_media_library"
     },
     {
       "relation": "contains",
@@ -2686,9 +2669,9 @@
       "source_file": "package.json",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_sqlite",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_sqlite"
     },
     {
       "relation": "contains",
@@ -2706,9 +2689,9 @@
       "source_file": "package.json",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_expo_web_browser",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_expo_web_browser"
     },
     {
       "relation": "contains",
@@ -2766,9 +2749,9 @@
       "source_file": "package.json",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
-      "target": "tui_template_native_package_dependencies_react_native_reanimated",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_dependencies_react_native_reanimated"
     },
     {
       "relation": "contains",
@@ -2896,9 +2879,9 @@
       "source_file": "package.json",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tui_template_native_package_devdependencies",
-      "target": "tui_template_native_package_devdependencies_typescript_eslint",
-      "confidence_score": 1.0
+      "target": "tui_template_native_package_devdependencies_typescript_eslint"
     },
     {
       "relation": "contains",
@@ -2949,16 +2932,6 @@
       "confidence_score": 1.0,
       "source": "expo_devices_json",
       "target": "expo_devices_devices"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/convert-png-to-svg.py",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "scripts_convert_png_to_svg_py",
-      "target": "scripts_convert_png_to_svg_vectorize_png",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -3049,48 +3022,6 @@
       "confidence_score": 1.0,
       "source": "scripts_rename_project_js",
       "target": "scripts_rename_project_workflowpath"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/banner-svg.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_components_banner_svg_tsx",
-      "target": "components_banner_svg_bannersvg",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/icon-svg.tsx",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "src_components_icon_svg_tsx",
-      "target": "components_icon_svg_iconsvg",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/splash-icon.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_components_splash_icon_tsx",
-      "target": "src_components_icon_svg_tsx",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/components/splash-icon.tsx",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "src_components_splash_icon_tsx",
-      "target": "components_icon_svg_iconsvg",
-      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -4328,6 +4259,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "tui_template_native_readme_tui_template_native_expo_react_native",
+      "target": "tui_template_native_readme_app_icon_splash_screen_assets_regeneration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
       "source_location": "L72",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4446,5 +4387,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b0cde7391e9ddc1b902f1fbe90abd284b0f12ce6"
+  "built_at_commit": "7e5ee9b8f07a77a8d71c67d9454781c4cc52a8f8"
 }
