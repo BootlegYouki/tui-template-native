@@ -73,25 +73,31 @@ if (fs.existsSync(packageJsonPath)) {
   }
 }
 
-// 3. Update .github/workflows/build-ios-ipa.yml
-const workflowPath = path.join(rootDir, '.github', 'workflows', 'build-ios-ipa.yml');
-if (fs.existsSync(workflowPath)) {
+// 3. Update .github/workflows/
+const workflowsDir = path.join(rootDir, '.github', 'workflows');
+if (fs.existsSync(workflowsDir)) {
   try {
-    let workflowContent = fs.readFileSync(workflowPath, 'utf8');
-    
-    // Replace names, slugs, and bundle ID references
-    workflowContent = workflowContent
-      // Replace Display Name references (scheme/workspace targets)
-      .replace(/TuiTemplateNative/g, displayName)
-      // Replace bundle ID references
-      .replace(/com\.bootlegyouki\.tuitemplatenative/g, bundleId)
-      // Replace slug references if any
-      .replace(/tui-template-native/g, slug);
-      
-    fs.writeFileSync(workflowPath, workflowContent, 'utf8');
-    console.log('\x1b[32m✔ Updated build-ios-ipa.yml successfully.\x1b[0m');
+    const files = fs.readdirSync(workflowsDir);
+    files.forEach((file) => {
+      if (file.endsWith('.yml')) {
+        const filePath = path.join(workflowsDir, file);
+        let workflowContent = fs.readFileSync(filePath, 'utf8');
+        
+        // Replace names, slugs, and bundle ID references
+        workflowContent = workflowContent
+          // Replace Display Name references (scheme/workspace targets)
+          .replace(/TuiTemplateNative/g, displayName)
+          // Replace bundle ID references
+          .replace(/com\.bootlegyouki\.tuitemplatenative/g, bundleId)
+          // Replace slug references if any
+          .replace(/tui-template-native/g, slug);
+          
+        fs.writeFileSync(filePath, workflowContent, 'utf8');
+        console.log(`\x1b[32m✔ Updated workflow ${file} successfully.\x1b[0m`);
+      }
+    });
   } catch (err) {
-    console.error('\x1b[31mError reading/writing build-ios-ipa.yml:\x1b[0m', err.message);
+    console.error('\x1b[31mError updating workflows:\x1b[0m', err.message);
   }
 }
 

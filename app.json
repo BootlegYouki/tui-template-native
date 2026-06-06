@@ -6,27 +6,42 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "splash": {
-      "image": "./assets/icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#18181B"
-    },
+    "scheme": "tuitemplatenative",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.bootlegyouki.tuitemplatenative"
+      "bundleIdentifier": "com.bootlegyouki.tuitemplatenative",
+      "icon": {
+        "light": "./assets/icon.png",
+        "dark": "./assets/icon.png",
+        "tinted": "./assets/adaptive-icon-monochrome.png"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#121212",
-        "foregroundImage": "./assets/icon.png"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "monochromeImage": "./assets/adaptive-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
     },
     "web": {
-      "favicon": "./assets/icon.png"
+      "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon-monochrome.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F4F4F5",
+          "dark": {
+            "image": "./assets/splash-icon.png",
+            "backgroundColor": "#18181B"
+          }
+        }
+      ],
       [
         "expo-camera",
         {
@@ -51,7 +66,8 @@
         {
           "faceIDPermission": "Allow the app to authenticate using FaceID."
         }
-      ]
+      ],
+      "expo-share-extension"
     ]
   }
 }

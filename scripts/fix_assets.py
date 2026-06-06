@@ -96,9 +96,15 @@ splash_canvas.save(os.path.join(assets_dir, "splash-icon-monochrome.png"), "PNG"
 print(f"Generated clean splash-icon.png and splash-icon-monochrome.png ({splash_size}x{splash_size})")
 
 # --- 2. Regenerate adaptive-icon.png and adaptive-icon-monochrome.png ---
-# Original adaptive-icon size: 432x432. Bounding box size was 152x130.
-target_logo_w = 152
-target_logo_h = 130
+# Fit the logo inside a 152x152 area maintaining original aspect ratio (prevents squishing)
+target_max_dim = 152
+logo_aspect = cw / ch
+if cw >= ch:
+    target_logo_w = target_max_dim
+    target_logo_h = int(target_max_dim / logo_aspect)
+else:
+    target_logo_h = target_max_dim
+    target_logo_w = int(target_max_dim * logo_aspect)
 
 # Resize clean logo to target size using high-quality resampling
 clean_logo_resized = clean_logo.resize((target_logo_w, target_logo_h), Image.Resampling.LANCZOS)

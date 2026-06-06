@@ -1,35 +1,40 @@
-name: Build Dev Client IPA
+name: Build Unsigned iOS Dev Client IPA
 
-# Run manually whenever you add a new native module and need to rebuild the dev binary
 on:
   workflow_dispatch:
 
 jobs:
   build:
-    name: Build Dev Client
+    name: Build Dev Client IPA
     runs-on: macos-latest
     permissions:
-      contents: write
+      contents: write # Required to create GitHub Releases
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 9
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'pnpm'
+          cache: 'npm'
+
+      - name: Get current app version from app.json
+        id: app_version
+        run: |
+          node -e "
+            const app = require('./app.json');
+            const version = app.expo.version || '1.0.0';
+            console.log('App version:', version);
+            const fs = require('fs');
+            fs.appendFileSync(process.env.GITHUB_ENV, 'VERSION=' + version + '\n');
+          "
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm install
 
-      - name: Expo Prebuild (Generate iOS folder with dev client)
+      - name: Expo Prebuild (Generate iOS folder)
         run: npx expo prebuild --platform ios --clean
 
       - name: Install CocoaPods
@@ -37,7 +42,7 @@ jobs:
           cd ios
           pod install
 
-      - name: Build Dev Client (Debug)
+      - name: Build Unsigned Dev Client App (Debug)
         run: |
           cd ios
           xcodebuild -workspace TuiTemplateNative.xcworkspace \
@@ -53,35 +58,27 @@ jobs:
         run: |
           cd ios/build/Build/Products/Debug-iphoneos
           mkdir Payload
-          mv TuiTemplateNative.app Payload/
-          zip -qr ../../../../../TuiTemplateNative-dev.ipa Payload
+          mv *.app Payload/
+          zip -qr ../../../../../BetterExpo-DevClient.ipa Payload
 
-      - name: Upload dev client IPA as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: TuiTemplateNative-dev-client
-          path: TuiTemplateNative-dev.ipa
-          retention-days: 30
-
-      - name: Also attach to a pre-release (optional, easy to download)
+      - name: Create GitHub Release for Dev Client
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: dev-client-latest
-          name: Dev Client (Latest)
+          tag_name: v${{ env.VERSION }}-devclient
+          name: BetterExpo Dev Client v${{ env.VERSION }}
           body: |
-            ## TuiTemplateNative Dev Client
-
-            Sideload this IPA to use as a development environment.
-            It has all native modules compiled in (Reanimated, Camera, SQLite, Haptics, LocalAuth, etc).
-
-            ### How to use
-            1. Sideload `TuiTemplateNative-dev.ipa` via SideStore/Sideloadly/AltStore
-            2. On your computer, run: `npx expo start --dev-client`
-            3. Open the dev client app on your iPhone
-            4. Enter your computer's IP or scan the QR code
-            5. The app loads from your Metro server — full hot reload!
-
-            **Only rebuild this when you add/remove a native module.**
-          files: TuiTemplateNative-dev.ipa
+            ## BetterExpo Development Client v${{ env.VERSION }}
+            
+            This is a universal development client IPA preloaded with native libraries (Reanimated, Camera, Local Authentication, Share Extension, SQLite, etc.) matching this template's dependencies.
+            
+            ### Sideload via SideStore / AltStore / Sideloadly
+            Download `BetterExpo-DevClient.ipa` below and sideload it.
+            
+            ### How to use:
+            1. Open the Dev Client app on your device.
+            2. Run `npm run start -- --dev-client` or `pnpm start --dev-client` in your local project directory.
+            3. Connect by scanning the QR code or entering your local bundler URL (e.g. `exp://192.168.X.X:8081`) inside the app.
+          files: |
+            BetterExpo-DevClient.ipa
+          draft: false
           prerelease: true
-          make_latest: false
