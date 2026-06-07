@@ -66,6 +66,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10",
+    "@expo/config-plugins": "~54.0.4",
     "@types/node": "^24",
     "@types/react": "~19.1.10",
     "eslint": "^10",
