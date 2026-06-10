@@ -55,20 +55,20 @@ jobs:
       - name: Expo Prebuild (Generate iOS folder)
         run: |
           set -o pipefail
-          npx expo prebuild --platform ios --clean 2>&1 | tee prebuild.log
+          npx expo prebuild --platform ios --clean --no-install 2>&1 | tee prebuild.log
 
       - name: Install CocoaPods
         run: |
           set -o pipefail
           cd ios
-          pod install 2>&1 | tee ../pod_install.log
+          pod install --repo-update 2>&1 | tee ../pod_install.log
 
       - name: Build Unsigned App
         run: |
           set -o pipefail
           cd ios
-          xcodebuild -workspace Dev Client.xcworkspace \
-            -scheme Dev Client \
+          xcodebuild -workspace DevClient.xcworkspace \
+            -scheme DevClient \
             -configuration Release \
             -sdk iphoneos \
             -derivedDataPath build \
