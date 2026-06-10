@@ -67,8 +67,8 @@ jobs:
         run: |
           set -o pipefail
           cd ios
-          xcodebuild -workspace TuiTemplateNative.xcworkspace \
-            -scheme TuiTemplateNative \
+          xcodebuild -workspace Dev Client.xcworkspace \
+            -scheme Dev Client \
             -configuration Release \
             -sdk iphoneos \
             -derivedDataPath build \
@@ -81,7 +81,7 @@ jobs:
           cd ios/build/Build/Products/Release-iphoneos
           mkdir Payload
           mv *.app Payload/
-          zip -qr ../../../../../TuiTemplateNative.ipa Payload
+          zip -qr ../../../../../Dev Client.ipa Payload
 
       - name: Generate SideStore source.json
         run: |
@@ -89,16 +89,16 @@ jobs:
           REPO="${{ github.repository }}"
           cat > sidestore.json << EOF
           {
-            "name": "TuiTemplateNative",
-            "identifier": "com.bootlegyouki.tuitemplatenative.source",
+            "name": "Dev Client",
+            "identifier": "com.bootlegyouki.devclient.source",
             "apps": [
               {
-                "name": "TuiTemplateNative",
-                "bundleIdentifier": "com.bootlegyouki.tuitemplatenative",
+                "name": "Dev Client",
+                "bundleIdentifier": "com.bootlegyouki.devclient",
                 "developerName": "BootlegYouki",
                 "version": "${VERSION}",
                 "versionDate": "${DATE}",
-                "downloadURL": "https://github.com/${REPO}/releases/download/v${VERSION}/TuiTemplateNative.ipa",
+                "downloadURL": "https://github.com/${REPO}/releases/download/v${VERSION}/Dev Client.ipa",
                 "localizedDescription": "Brutalist template using Native components.",
                 "iconURL": "https://raw.githubusercontent.com/${REPO}/main/assets/icon.png",
                 "tintColor": "00E5FF",
@@ -112,12 +112,12 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ env.VERSION }}
-          name: TuiTemplateNative v${{ env.VERSION }}
+          name: Dev Client v${{ env.VERSION }}
           body: |
-            ## TuiTemplateNative v${{ env.VERSION }}
+            ## Dev Client v${{ env.VERSION }}
             
             ### Sideload via SideStore / Sideloadly / AltStore
-            Download `TuiTemplateNative.ipa` below and sideload it.
+            Download `Dev Client.ipa` below and sideload it.
             
             ### SideStore Source URL
             Add this source to SideStore for auto-updates:
@@ -125,7 +125,7 @@ jobs:
             https://raw.githubusercontent.com/${{ github.repository }}/main/sidestore.json
             ```
           files: |
-            TuiTemplateNative.ipa
+            Dev Client.ipa
             sidestore.json
           draft: false
           prerelease: false

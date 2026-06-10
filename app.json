@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "TuiTemplateNative",
-    "slug": "tui-template-native",
+    "name": "Dev Client",
+    "slug": "dev-client",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,7 +9,7 @@
     "scheme": "tuitemplatenative",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.bootlegyouki.tuitemplatenative",
+      "bundleIdentifier": "com.bootlegyouki.devclient",
       "icon": {
         "light": "./assets/icon.png",
         "dark": "./assets/icon.png",
