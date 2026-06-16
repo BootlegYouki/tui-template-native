@@ -47,6 +47,7 @@
     "expo-location": "~19.0.8",
     "expo-media-library": "~18.2.1",
     "expo-notifications": "~0.32.17",
+    "expo-pdf-text-extract": "^1.1.0",
     "expo-router": "~6.0.24",
     "expo-secure-store": "~15.0.8",
     "expo-sensors": "~15.0.8",

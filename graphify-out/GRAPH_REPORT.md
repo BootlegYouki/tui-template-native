@@ -1,16 +1,16 @@
 # Graph Report - tui-template-native  (2026-06-16)
 
 ## Corpus Check
-- 30 files · ~14,683 words
+- 30 files · ~14,685 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 235 nodes · 296 edges · 27 communities (23 shown, 4 thin omitted)
+- 236 nodes · 297 edges · 27 communities (23 shown, 4 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c476b5c7`
+- Built from commit: `c9b99318`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -66,8 +66,8 @@
 ## Communities (27 total, 4 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.19
-Nodes (8): SplashIcon(), SplashIconProps, ScreenType, styles, TuiTabBar(), TuiTabBarProps, MainApp(), styles
+Cohesion: 0.20
+Nodes (7): SplashIcon(), SplashIconProps, styles, TuiSwitch(), TuiSwitchProps, MainApp(), styles
 
 ### Community 1 - "Community 1"
 Cohesion: 0.07
@@ -79,7 +79,7 @@ Nodes (10): ChartItem, MeterSegment, styles, TuiBarChart(), TuiBarChartProps, Tu
 
 ### Community 3 - "Community 3"
 Cohesion: 0.04
-Nodes (53): dependencies, axios, expo, expo-application, expo-auth-session, expo-av, expo-blur, expo-camera (+45 more)
+Nodes (54): dependencies, axios, expo, expo-application, expo-auth-session, expo-av, expo-blur, expo-camera (+46 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.12
@@ -127,11 +127,11 @@ Nodes (3): styles, TuiCheckbox(), TuiCheckboxProps
 
 ### Community 21 - "Community 21"
 Cohesion: 0.22
-Nodes (8): styles, TuiHeader(), TuiHeaderProps, styles, TuiInput(), TuiInputProps, TuiText(), TuiTextProps
+Nodes (8): styles, TuiButton(), TuiButtonProps, styles, TuiInput(), TuiInputProps, TuiText(), TuiTextProps
 
 ### Community 22 - "Community 22"
-Cohesion: 0.50
-Nodes (3): styles, TuiButton(), TuiButtonProps
+Cohesion: 0.40
+Nodes (4): ScreenType, styles, TuiTabBar(), TuiTabBarProps
 
 ### Community 23 - "Community 23"
 Cohesion: 0.50
@@ -139,10 +139,10 @@ Nodes (3): config, { getDefaultConfig }, { withShareExtension }
 
 ### Community 26 - "Community 26"
 Cohesion: 0.50
-Nodes (3): styles, TuiSwitch(), TuiSwitchProps
+Nodes (3): styles, TuiHeader(), TuiHeaderProps
 
 ## Knowledge Gaps
-- **166 isolated node(s):** `name`, `slug`, `version`, `orientation`, `icon` (+161 more)
+- **167 isolated node(s):** `name`, `slug`, `version`, `orientation`, `icon` (+162 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -150,14 +150,14 @@ Nodes (3): styles, TuiSwitch(), TuiSwitchProps
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `dependencies` connect `Community 3` to `Community 4`?**
-  _High betweenness centrality (0.104) - this node is a cross-community bridge._
+  _High betweenness centrality (0.106) - this node is a cross-community bridge._
 - **Why does `devDependencies` connect `Community 5` to `Community 4`?**
   _High betweenness centrality (0.030) - this node is a cross-community bridge._
 - **What connects `name`, `slug`, `version` to the rest of the system?**
-  _166 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _167 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
 - **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.03773584905660377 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.037037037037037035 - nodes in this community are weakly interconnected._
 - **Should `Community 4` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

@@ -778,10 +778,19 @@
       "norm_label": "expo-notifications"
     },
     {
-      "label": "expo-router",
+      "label": "expo-pdf-text-extract",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L50",
+      "id": "tui_template_native_package_dependencies_expo_pdf_text_extract",
+      "community": 3,
+      "norm_label": "expo-pdf-text-extract"
+    },
+    {
+      "label": "expo-router",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L51",
       "id": "tui_template_native_package_dependencies_expo_router",
       "community": 3,
       "norm_label": "expo-router"
@@ -790,7 +799,7 @@
       "label": "expo-secure-store",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L51",
+      "source_location": "L52",
       "id": "tui_template_native_package_dependencies_expo_secure_store",
       "community": 3,
       "norm_label": "expo-secure-store"
@@ -799,7 +808,7 @@
       "label": "expo-sensors",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L52",
+      "source_location": "L53",
       "id": "tui_template_native_package_dependencies_expo_sensors",
       "community": 3,
       "norm_label": "expo-sensors"
@@ -808,7 +817,7 @@
       "label": "expo-share-extension",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L53",
+      "source_location": "L54",
       "id": "tui_template_native_package_dependencies_expo_share_extension",
       "community": 3,
       "norm_label": "expo-share-extension"
@@ -817,7 +826,7 @@
       "label": "expo-sharing",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L54",
+      "source_location": "L55",
       "id": "tui_template_native_package_dependencies_expo_sharing",
       "community": 3,
       "norm_label": "expo-sharing"
@@ -826,7 +835,7 @@
       "label": "expo-splash-screen",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L55",
+      "source_location": "L56",
       "id": "tui_template_native_package_dependencies_expo_splash_screen",
       "community": 3,
       "norm_label": "expo-splash-screen"
@@ -835,7 +844,7 @@
       "label": "expo-sqlite",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L56",
+      "source_location": "L57",
       "id": "tui_template_native_package_dependencies_expo_sqlite",
       "community": 3,
       "norm_label": "expo-sqlite"
@@ -844,7 +853,7 @@
       "label": "expo-status-bar",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L57",
+      "source_location": "L58",
       "id": "tui_template_native_package_dependencies_expo_status_bar",
       "community": 3,
       "norm_label": "expo-status-bar"
@@ -853,7 +862,7 @@
       "label": "expo-system-ui",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L58",
+      "source_location": "L59",
       "id": "tui_template_native_package_dependencies_expo_system_ui",
       "community": 3,
       "norm_label": "expo-system-ui"
@@ -862,7 +871,7 @@
       "label": "expo-web-browser",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L59",
+      "source_location": "L60",
       "id": "tui_template_native_package_dependencies_expo_web_browser",
       "community": 3,
       "norm_label": "expo-web-browser"
@@ -871,7 +880,7 @@
       "label": "lucide-react-native",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L60",
+      "source_location": "L61",
       "id": "tui_template_native_package_dependencies_lucide_react_native",
       "community": 3,
       "norm_label": "lucide-react-native"
@@ -880,7 +889,7 @@
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L61",
+      "source_location": "L62",
       "id": "tui_template_native_package_dependencies_react",
       "community": 3,
       "norm_label": "react"
@@ -889,7 +898,7 @@
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L62",
+      "source_location": "L63",
       "id": "tui_template_native_package_dependencies_react_dom",
       "community": 3,
       "norm_label": "react-dom"
@@ -898,7 +907,7 @@
       "label": "react-native",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L63",
+      "source_location": "L64",
       "id": "tui_template_native_package_dependencies_react_native",
       "community": 3,
       "norm_label": "react-native"
@@ -907,7 +916,7 @@
       "label": "react-native-gesture-handler",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L64",
+      "source_location": "L65",
       "id": "tui_template_native_package_dependencies_react_native_gesture_handler",
       "community": 3,
       "norm_label": "react-native-gesture-handler"
@@ -916,7 +925,7 @@
       "label": "react-native-reanimated",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L65",
+      "source_location": "L66",
       "id": "tui_template_native_package_dependencies_react_native_reanimated",
       "community": 3,
       "norm_label": "react-native-reanimated"
@@ -925,7 +934,7 @@
       "label": "react-native-safe-area-context",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L66",
+      "source_location": "L67",
       "id": "tui_template_native_package_dependencies_react_native_safe_area_context",
       "community": 3,
       "norm_label": "react-native-safe-area-context"
@@ -934,7 +943,7 @@
       "label": "react-native-screens",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L67",
+      "source_location": "L68",
       "id": "tui_template_native_package_dependencies_react_native_screens",
       "community": 3,
       "norm_label": "react-native-screens"
@@ -943,7 +952,7 @@
       "label": "react-native-share",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L68",
+      "source_location": "L69",
       "id": "tui_template_native_package_dependencies_react_native_share",
       "community": 3,
       "norm_label": "react-native-share"
@@ -952,7 +961,7 @@
       "label": "react-native-svg",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L69",
+      "source_location": "L70",
       "id": "tui_template_native_package_dependencies_react_native_svg",
       "community": 3,
       "norm_label": "react-native-svg"
@@ -961,7 +970,7 @@
       "label": "react-native-web",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L70",
+      "source_location": "L71",
       "id": "tui_template_native_package_dependencies_react_native_web",
       "community": 3,
       "norm_label": "react-native-web"
@@ -970,7 +979,7 @@
       "label": "react-native-worklets",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L71",
+      "source_location": "L72",
       "id": "tui_template_native_package_dependencies_react_native_worklets",
       "community": 3,
       "norm_label": "react-native-worklets"
@@ -979,7 +988,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L73",
+      "source_location": "L74",
       "id": "tui_template_native_package_devdependencies",
       "community": 5,
       "norm_label": "devdependencies"
@@ -988,7 +997,7 @@
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L74",
+      "source_location": "L75",
       "id": "tui_template_native_package_devdependencies_eslint_js",
       "community": 5,
       "norm_label": "@eslint/js"
@@ -997,7 +1006,7 @@
       "label": "@expo/config-plugins",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L75",
+      "source_location": "L76",
       "id": "tui_template_native_package_devdependencies_expo_config_plugins",
       "community": 5,
       "norm_label": "@expo/config-plugins"
@@ -1006,7 +1015,7 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L76",
+      "source_location": "L77",
       "id": "tui_template_native_package_devdependencies_types_node",
       "community": 5,
       "norm_label": "@types/node"
@@ -1015,7 +1024,7 @@
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L77",
+      "source_location": "L78",
       "id": "tui_template_native_package_devdependencies_types_react",
       "community": 5,
       "norm_label": "@types/react"
@@ -1024,7 +1033,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L78",
+      "source_location": "L79",
       "id": "tui_template_native_package_devdependencies_eslint",
       "community": 5,
       "norm_label": "eslint"
@@ -1033,7 +1042,7 @@
       "label": "eslint-plugin-react-hooks",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L79",
+      "source_location": "L80",
       "id": "tui_template_native_package_devdependencies_eslint_plugin_react_hooks",
       "community": 5,
       "norm_label": "eslint-plugin-react-hooks"
@@ -1042,7 +1051,7 @@
       "label": "eslint-plugin-react-refresh",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L80",
+      "source_location": "L81",
       "id": "tui_template_native_package_devdependencies_eslint_plugin_react_refresh",
       "community": 5,
       "norm_label": "eslint-plugin-react-refresh"
@@ -1051,7 +1060,7 @@
       "label": "globals",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L81",
+      "source_location": "L82",
       "id": "tui_template_native_package_devdependencies_globals",
       "community": 5,
       "norm_label": "globals"
@@ -1060,7 +1069,7 @@
       "label": "prettier",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L82",
+      "source_location": "L83",
       "id": "tui_template_native_package_devdependencies_prettier",
       "community": 5,
       "norm_label": "prettier"
@@ -1069,7 +1078,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L83",
+      "source_location": "L84",
       "id": "tui_template_native_package_devdependencies_typescript",
       "community": 5,
       "norm_label": "typescript"
@@ -1078,7 +1087,7 @@
       "label": "typescript-eslint",
       "file_type": "code",
       "source_file": "package.json",
-      "source_location": "L84",
+      "source_location": "L85",
       "id": "tui_template_native_package_devdependencies_typescript_eslint",
       "community": 5,
       "norm_label": "typescript-eslint"
@@ -1260,7 +1269,7 @@
       "source_file": "src/components/tui-button.tsx",
       "source_location": "L1",
       "id": "src_components_tui_button_tsx",
-      "community": 22,
+      "community": 21,
       "norm_label": "tui-button.tsx"
     },
     {
@@ -1269,7 +1278,7 @@
       "source_file": "src/components/tui-button.tsx",
       "source_location": "L6",
       "id": "components_tui_button_tuibuttonprops",
-      "community": 22,
+      "community": 21,
       "norm_label": "tuibuttonprops"
     },
     {
@@ -1278,7 +1287,7 @@
       "source_file": "src/components/tui-button.tsx",
       "source_location": "L14",
       "id": "components_tui_button_tuibutton",
-      "community": 22,
+      "community": 21,
       "norm_label": "tuibutton()"
     },
     {
@@ -1287,7 +1296,7 @@
       "source_file": "src/components/tui-button.tsx",
       "source_location": "L89",
       "id": "components_tui_button_styles",
-      "community": 22,
+      "community": 21,
       "norm_label": "styles"
     },
     {
@@ -1557,7 +1566,7 @@
       "source_file": "src/components/tui-header.tsx",
       "source_location": "L1",
       "id": "src_components_tui_header_tsx",
-      "community": 21,
+      "community": 26,
       "norm_label": "tui-header.tsx"
     },
     {
@@ -1566,7 +1575,7 @@
       "source_file": "src/components/tui-header.tsx",
       "source_location": "L6",
       "id": "components_tui_header_tuiheaderprops",
-      "community": 21,
+      "community": 26,
       "norm_label": "tuiheaderprops"
     },
     {
@@ -1575,7 +1584,7 @@
       "source_file": "src/components/tui-header.tsx",
       "source_location": "L14",
       "id": "components_tui_header_tuiheader",
-      "community": 21,
+      "community": 26,
       "norm_label": "tuiheader()"
     },
     {
@@ -1584,7 +1593,7 @@
       "source_file": "src/components/tui-header.tsx",
       "source_location": "L53",
       "id": "components_tui_header_styles",
-      "community": 21,
+      "community": 26,
       "norm_label": "styles"
     },
     {
@@ -1629,7 +1638,7 @@
       "source_file": "src/components/tui-nav.tsx",
       "source_location": "L1",
       "id": "src_components_tui_nav_tsx",
-      "community": 0,
+      "community": 22,
       "norm_label": "tui-nav.tsx"
     },
     {
@@ -1638,7 +1647,7 @@
       "source_file": "src/components/tui-nav.tsx",
       "source_location": "L8",
       "id": "components_tui_nav_screentype",
-      "community": 0,
+      "community": 22,
       "norm_label": "screentype"
     },
     {
@@ -1647,7 +1656,7 @@
       "source_file": "src/components/tui-nav.tsx",
       "source_location": "L10",
       "id": "components_tui_nav_tuitabbarprops",
-      "community": 0,
+      "community": 22,
       "norm_label": "tuitabbarprops"
     },
     {
@@ -1656,7 +1665,7 @@
       "source_file": "src/components/tui-nav.tsx",
       "source_location": "L19",
       "id": "components_tui_nav_tuitabbar",
-      "community": 0,
+      "community": 22,
       "norm_label": "tuitabbar()"
     },
     {
@@ -1665,7 +1674,7 @@
       "source_file": "src/components/tui-nav.tsx",
       "source_location": "L274",
       "id": "components_tui_nav_styles",
-      "community": 0,
+      "community": 22,
       "norm_label": "styles"
     },
     {
@@ -1701,7 +1710,7 @@
       "source_file": "src/components/tui-switch.tsx",
       "source_location": "L1",
       "id": "src_components_tui_switch_tsx",
-      "community": 26,
+      "community": 0,
       "norm_label": "tui-switch.tsx"
     },
     {
@@ -1710,7 +1719,7 @@
       "source_file": "src/components/tui-switch.tsx",
       "source_location": "L6",
       "id": "components_tui_switch_tuiswitchprops",
-      "community": 26,
+      "community": 0,
       "norm_label": "tuiswitchprops"
     },
     {
@@ -1719,7 +1728,7 @@
       "source_file": "src/components/tui-switch.tsx",
       "source_location": "L13",
       "id": "components_tui_switch_tuiswitch",
-      "community": 26,
+      "community": 0,
       "norm_label": "tuiswitch()"
     },
     {
@@ -1728,7 +1737,7 @@
       "source_file": "src/components/tui-switch.tsx",
       "source_location": "L112",
       "id": "components_tui_switch_styles",
-      "community": 26,
+      "community": 0,
       "norm_label": "styles"
     },
     {
@@ -3239,6 +3248,16 @@
       "confidence_score": 1.0,
       "source": "tui_template_native_package_dependencies",
       "target": "tui_template_native_package_dependencies_expo_notifications"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "tui_template_native_package_dependencies",
+      "target": "tui_template_native_package_dependencies_expo_pdf_text_extract",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -5098,9 +5117,9 @@
       "source_file": ".agents/skills/ponytail/SKILL.md",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_skills_ponytail_skill_md",
-      "target": "ponytail_skill_ponytail",
-      "confidence_score": 1.0
+      "target": "ponytail_skill_ponytail"
     },
     {
       "relation": "contains",
@@ -5108,9 +5127,9 @@
       "source_file": ".agents/skills/ponytail/SKILL.md",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ponytail_skill_ponytail",
-      "target": "ponytail_skill_persistence",
-      "confidence_score": 1.0
+      "target": "ponytail_skill_persistence"
     },
     {
       "relation": "contains",
@@ -5118,9 +5137,9 @@
       "source_file": ".agents/skills/ponytail/SKILL.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ponytail_skill_ponytail",
-      "target": "ponytail_skill_rules",
-      "confidence_score": 1.0
+      "target": "ponytail_skill_rules"
     },
     {
       "relation": "contains",
@@ -5128,9 +5147,9 @@
       "source_file": ".agents/skills/ponytail/SKILL.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ponytail_skill_ponytail",
-      "target": "ponytail_skill_the_ladder",
-      "confidence_score": 1.0
+      "target": "ponytail_skill_the_ladder"
     },
     {
       "relation": "contains",
@@ -5174,5 +5193,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c476b5c7fe89457a7cc28a5569612addf7ce0cd4"
+  "built_at_commit": "c9b99318dd33e425bd0e60ff5b4c4cee50c8907d"
 }
